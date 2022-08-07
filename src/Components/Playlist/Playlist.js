@@ -3,17 +3,17 @@ import './Playlist.css';
 import TrackList from '../TrackList/TrackList';
 
 class Playlist extends React.Component {
-  handleNameChange = (value) => {
-    this.props.onNameChange(value);
+  handleNameChange = (name) => {
+    this.props.onNameChange(name);
   }
 
   render() {
     return (
       <div className="Playlist">
-        <input onChange={(e) => this.handleNameChange(e.target.value)} defaultValue={'New Playlist'}/>
+        <input onChange={(e) => this.handleNameChange(e.target.value)} placeholder={this.props.playlistName}/>
         <TrackList 
           tracks={this.props.playlistTracks}
-          isRemoval={this.props.isRemoval}
+          isRemoval={true}
           onRemove={this.props.onRemove}
         />
         <button className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</button>
