@@ -1,5 +1,5 @@
 const clientId = '0fadae5affd14a16a3abecf6c721f360';
-const redirectUri = 'https://tricky-flame.surge.sh';
+const redirectUri = 'https://bucolic-cupcake-79cd96.netlify.app/';
 let accessToken;
 
 const Spotify = {
