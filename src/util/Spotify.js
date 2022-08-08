@@ -1,5 +1,5 @@
 const clientId = '0fadae5affd14a16a3abecf6c721f360';
-const redirectUri = 'http://localhost:3000';
+const redirectUri = 'https://tricky-flame.surge.sh';
 let accessToken;
 
 const Spotify = {
